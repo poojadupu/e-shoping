@@ -22,7 +22,8 @@ static CategoryDAO categoryDAO;
 		context.refresh();	
 		categoryDAO=(CategoryDAO)context.getBean("categoryDAO");
 	}
-	
+
+	@Ignore
 	@Test
 	public void addCategoryTest() 
 	{
@@ -46,7 +47,8 @@ static CategoryDAO categoryDAO;
 		category.setCategoryDesc("Pencil cut Jeans with Chain");
 	assertTrue("Problem in Updating the Category",categoryDAO.updateCategory(category));
 	}
-	
+
+	@Ignore
 	@Test
 	public void listCategoriesTest()
 	{

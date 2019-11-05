@@ -15,7 +15,7 @@
   <div class="main-login main-center">
    <h5>Register</h5>
 
-      <form:form method="post" action="registerUser" modelAttribute="userInfo">
+      <form:form method="post" action="addUser" modelAttribute="userInfo">
       
       <div class="form-group">
         <label for="name" class="cols-sm-2 control-label">Your Name</label>

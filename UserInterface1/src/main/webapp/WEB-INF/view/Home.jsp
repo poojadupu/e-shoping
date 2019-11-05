@@ -2,6 +2,9 @@
 <%@include file="Header.jsp"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
+<spring:url var="css" value="/assets/css" />
+<spring:url var="images" value="/resources/images" />
+<c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 
 <body>
 

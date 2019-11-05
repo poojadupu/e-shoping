@@ -26,7 +26,8 @@ public class OrderDetailTest
 	    orderDao=(OrderDao) context.getBean("orderDao");
     }
    
-    
+
+	@Ignore
 	@Test
 	public void saveOrdertest() 
 	{
@@ -41,7 +42,8 @@ public class OrderDetailTest
 		
 		assertTrue("Problem in saving order",orderDao.saveOrder(orderDetail));
 	}
-	
+
+	@Ignore
 	@Test
 	public void updateCartTest()
 	{

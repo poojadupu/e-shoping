@@ -23,7 +23,8 @@ static ProductDAO productDAO;
 		context.refresh();	
 		productDAO=(ProductDAO)context.getBean("productDAO");
 	}
-	
+
+	@Ignore
 	@Test
 	public void addProductTest() 
 	{
@@ -47,7 +48,8 @@ static ProductDAO productDAO;
 		product.setProductDesc("Pencil cut Jeans with Chain");
 	assertTrue("Problem in Updating the Category",productDAO.updateProduct(product));
 	}
-	
+
+	@Ignore
 	@Test
 	public void listProductsTest()
 	{

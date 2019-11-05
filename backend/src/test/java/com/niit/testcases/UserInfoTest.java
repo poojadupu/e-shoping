@@ -26,7 +26,8 @@ public class UserInfoTest {
 	    userDao=(UserDao)context.getBean("userDao");
 	}
 	
-	
+
+	@Ignore
 	@Test
 	public void registerUserTest() 
 	{

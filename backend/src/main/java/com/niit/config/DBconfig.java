@@ -1,6 +1,5 @@
 package com.niit.config;
 import java.util.Properties;
-
 import javax.sql.DataSource;
 
 import org.hibernate.SessionFactory;
@@ -28,7 +27,7 @@ public class DBconfig {
 			public DataSource getH2DataSource()
 			{
 				DriverManagerDataSource dataSource=new DriverManagerDataSource();
-				
+			
 				dataSource.setDriverClassName("org.h2.Driver");
 				dataSource.setUrl("jdbc:h2:tcp://localhost/~/test");
 				dataSource.setUsername("sa");

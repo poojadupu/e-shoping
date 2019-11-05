@@ -23,7 +23,8 @@ static SupplierDAO supplierDAO;
 		context.refresh();	
 		supplierDAO=(SupplierDAO)context.getBean("supplierDAO");
 	}
-	
+
+	@Ignore
 	@Test
 	public void addSupplierTest() 
 	{
@@ -47,7 +48,8 @@ static SupplierDAO supplierDAO;
 		supplier.setSupplierAddr("Pencil cut Jeans with Chain");
 	assertTrue("Problem in Updating the Category",supplierDAO.updateSupplier(supplier));
 	}
-	
+
+	@Ignore
 	@Test
 	public void listSuppliersTest()
 	{

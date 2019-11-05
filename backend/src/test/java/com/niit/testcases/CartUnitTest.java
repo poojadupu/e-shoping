@@ -27,7 +27,8 @@ public class CartUnitTest
 	    cartDao=(CartDao)context.getBean("cartDao");
 	}
 
-	
+
+	@Ignore
 	@Test
 	public void addCartItemtest() 
 	{
